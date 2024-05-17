@@ -1,0 +1,85 @@
+@import "../../styles/utils.scss";
+
+.TopNavBar {
+    height: 8dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 1rem;
+
+    .title {
+        span {
+            font-size: 2rem;
+        }
+    }
+
+    .input_field {
+        background: rgba(75, 11, 193, 0.07);
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #444;
+            width: 350px;
+        }
+    }
+
+    .preference {
+        display: flex;
+        padding: 0 2rem;
+        align-items: center;
+        gap: 2rem;
+
+        #country {
+            border: 0;
+            background: transparent;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .notification {
+            i {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(255, 217, 0, 0.111);
+                color: rgb(255, 215, 0);
+                padding: 8px;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background: rgb(223, 24, 24);
+                    height: 4px;
+                    width: 4px;
+                    border-radius: 50%;
+                    top: 5px;
+                    right: 5px;
+                }
+            }
+        }
+
+        .user_profile {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}

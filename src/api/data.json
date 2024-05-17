@@ -1,0 +1,28 @@
+{
+    "sales": [
+        {
+            "name": "Total Sales",
+            "amount": 1,
+            "increase": 15,
+            "accent": "hsl(350, 100%, 88%)"
+        },
+        {
+            "name": "Total Order",
+            "amount": 300,
+            "increase": 9,
+            "accent": "hsl(47, 94%, 49%)"
+        },
+        {
+            "name": "Product Sold",
+            "amount": 5,
+            "increase": 12,
+            "accent": "hsl(120, 90%, 36%)"
+        },
+        {
+            "name": "New Customers",
+            "amount": 8,
+            "increase": 8.5,
+            "accent": "hsl(270, 50%, 40%)"
+        }
+    ]
+}

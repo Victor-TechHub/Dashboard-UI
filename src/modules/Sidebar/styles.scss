@@ -1,0 +1,125 @@
+@import "../../styles/utils.scss";
+
+.SideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 8px;
+    justify-content: space-between;
+    height: 100%;
+
+    .logo {
+        span {
+            color: $mainTheme;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+    }
+
+    .links {
+        width: 100%;
+
+        ul {
+            list-style: none;
+            line-height: 40px;
+
+            li {
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 10px;
+                color: $gray;
+                border-radius: 10px;
+                padding-left: 15px;
+                transition: .3s;
+                cursor: pointer;
+
+                &:first-child {
+                    background: $mainTheme;
+                    color: white;
+                }
+
+                &:hover {
+                    background: $mainTheme;
+                    color: white;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                }
+            }
+        }
+    }
+
+    .promotion {
+        overflow: hidden;
+        position: relative;
+        background: $mainTheme;
+        padding: 1.3rem 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        align-items: center;
+
+        &:hover {
+
+            &::after,
+            &::before {
+                transform: scale(1.5);
+            }
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 1.2rem;
+            z-index: 1;
+        }
+
+        p {
+            z-index: 1;
+        }
+
+        button {
+            background: white;
+            color: #222;
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            width: 100px;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            background: lighten($color: $mainTheme, $amount: 20);
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            border-radius: 50%;
+            transition: 1s;
+        }
+
+        &::before {
+            bottom: -30px;
+            left: -20px;
+        }
+
+        &::after {
+            top: -30px;
+            right: -20px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .SideBar {
+
+        &.hide {
+            transform: translateX(-100dvw);
+        }
+    }
+}

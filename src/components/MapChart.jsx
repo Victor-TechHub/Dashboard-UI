@@ -1,8 +1,7 @@
 import React from "react"
 import { ComposableMap, Geographies, Geography } from "react-simple-maps"
 
-const geoUrl =
-    "https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_0_countries.geojson"
+const geoUrl = "https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_0_countries.geojson"
 
 export default function MapChart() {
     return (
@@ -13,8 +12,8 @@ export default function MapChart() {
                         <Geography
                             key={geo.rsmKey}
                             geography={geo}
-                            fill="gainsboro"
-                            stroke="gainsboro"
+                            fill="#555"
+                            stroke="#555"
                             style={{
                                 default: {
                                     fill: "#EEE",

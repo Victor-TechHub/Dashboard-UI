@@ -5,6 +5,7 @@ import BarChart from "../../components/BarChart";
 import LineChart from "../../components/LineChart";
 import MapChart from "../../components/MapChart";
 import DoughnutChart from "../../components/DoughnutChart";
+import TopProductTable from "../../components/Table/Table";
 
 const View = () => {
 
@@ -57,11 +58,13 @@ const View = () => {
                     <div className="title">
                         <p>Customer Satisfaction</p>
                     </div>
+                    <LineChart />
                 </div>
                 <div className="col">
                     <div className="title">
                         <p>Target vs Reality</p>
                     </div>
+                    <BarChart />
                 </div>
             </div>
 
@@ -72,6 +75,7 @@ const View = () => {
                     <div className="title">
                         <p>Top Products</p>
                     </div>
+                    <TopProductTable />
                 </div>
                 <div className="col">
                     <div className="title">
